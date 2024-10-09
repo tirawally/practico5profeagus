@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSL</title>
+</head>
+<body>
+    <form method="post" action="index.js" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Novell Service Login</legend>
+            <label for="nombreusuario" >username</label><br>
+            <input type="text" name="nombredeusuario" id="nombre" required><br>
+            <label for="contraseña">password</label><br>
+            <input type="text" name="contraseña" id="contra" size="50" maxlength="7"><br>
+            <label for="city">city of employment</label><br>
+            <input type="text" name="employment" id="employment"><br>
+            
+            <label for="server">select your server</label><br>
+            <select name="server" id="serv"><br>
+                <option value="arg">argentina</option><br>
+                <option value="rus">rusia</option><br>
+                <option value="ch">china</option><br>
+                <option value="ger">germany</option><br>
+            </select><br>
+
+            <label for="select">specify your role</label><br>
+            <input type="radio" name="role" value="Admin" id="ADM" checked >
+            <label for="ADM">Admin</label> <br>
+            <input type="radio" name="role" value="engineer" id="ENG" >
+            <label for="ENG">engineer</label> <br>
+            <input type="radio" name="role" value="manager" id="mana"  >
+            <label for="mana">manager</label> <br>
+            <input type="radio" name="role" value="guest" id="guest" >
+            <label for="guest">Guest</label> <br>
+
+            <label for="following">single sign-on to the following:</label> <br>
+            <input type="checkbox" value="accept" name="mail">
+            <label for="mail">mail</label> <br>
+            <input type="checkbox" value="accept" name="payroll">
+            <label for="payrol">payroll</label> <br>
+            <input type="checkbox" value="accept" name="selfService">
+            <label for="selfservice">self service</label> <br>
+
+
+           
+
+        </fieldset>
+        <input type="submit" name="enviar" value="enviar datos">
+        <input type="reset" name="borrar" value="borrar datos ">
+    </form>
+    
+</body>
+</html>
